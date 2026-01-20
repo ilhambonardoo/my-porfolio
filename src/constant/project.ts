@@ -27,3 +27,18 @@ export const projects = [
     color: "from-orange-900/20 to-red-900/20",
   },
 ];
+
+export const persons = [
+  {
+    id: 1,
+    hobby: "Web Dev",
+  },
+  {
+    id: 3,
+    hobby: "Athlete",
+  },
+  {
+    id: 2,
+    hobby: "Music",
+  },
+];

@@ -4,6 +4,9 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import Image from "next/image";
+import { persons } from "../constant/project";
+import { ScrambleText } from "../ui/ScrambleText";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -77,6 +80,7 @@ export default function Hero() {
         0,
       );
     },
+
     { scope: containerRef },
   );
 
@@ -87,9 +91,18 @@ export default function Hero() {
     >
       <div
         ref={bgRef}
-        className="absolute inset-0 z-0 bg-linear-to-br bg-black"
+        className="absolute inset-0 z-0 bg-black"
         style={{ transform: "scale(1.2)" }}
-      ></div>
+      >
+        <Image
+          src="/person/ilham2.png"
+          alt="background-hero"
+          fill
+          className="object-cover opacity-40 "
+          priority
+        />
+        <div className="absolute inset-0 bg-linear-to-b from-transparent via-black/50 to-zinc-950" />
+      </div>
 
       <div className="relative z-10 text-center px-4">
         <h1
@@ -98,6 +111,11 @@ export default function Hero() {
         >
           {originalText}
         </h1>
+        <div className="flex flex-wrap gap-6 justify-center max-w-2xl mx-auto">
+          {persons.map((person, index) => (
+            <ScrambleText key={person.id} text={person.hobby} index={index} />
+          ))}
+        </div>
         <p className="mt-4 text-zinc-400 text-lg md:text-xl opacity-80">
           Scroll down to see the effect
         </p>

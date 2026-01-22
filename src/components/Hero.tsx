@@ -6,13 +6,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import Image from "next/image";
 import { persons } from "../constant/project";
-import { ScrambleText } from "../ui/ScrambleText";
+import { ScrambleText } from "../hooks/useScrambleText";
+import { createScrambleAnimation, SYMBOLS } from "../utils/animationUtils";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
-
-const SYMBOLS = "!<>-_\\/[]{}—=+*^?#________";
 
 export default function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -41,44 +40,9 @@ export default function Hero() {
         0,
       );
 
-      const counter = { value: 0 };
-      tl.to(
-        counter,
-        {
-          value: 1,
-          duration: 1,
-          ease: "none",
-          onUpdate: () => {
-            const progress = counter.value;
-            const length = originalText.length;
-            let result = "";
-
-            const scrambleIndex = Math.floor(progress * length);
-
-            for (let i = 0; i < length; i++) {
-              if (i < scrambleIndex) {
-                result += SYMBOLS[Math.floor(Math.random() * SYMBOLS.length)];
-              } else {
-                result += originalText[i];
-              }
-            }
-
-            if (textRef.current) {
-              textRef.current.innerText = result;
-            }
-          },
-        },
-        0,
-      );
-
-      tl.to(
-        textRef.current,
-        {
-          opacity: 0,
-          ease: "none",
-        },
-        0,
-      );
+      if (textRef.current) {
+        createScrambleAnimation(textRef.current, originalText, SYMBOLS);
+      }
     },
 
     { scope: containerRef },

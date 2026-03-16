@@ -1,21 +1,29 @@
 export const projects = [
   {
     id: 1,
-    title: "Nebula Dashboard",
+    title: "IoTani",
     description:
-      "A futuristic analytics dashboard focusing on data visualization and real-time socket connections for high-frequency trading platforms.",
-    tech: ["Next.js", "TypeScript", "WebSockets", "D3.js"],
-    image: "https://placehold.co/800x600/18181b/ffffff?text=Dashboard+Mockup",
-    color: "from-blue-900/20 to-purple-900/20",
+      "Sistem Pengukuran pH dan Kelembaban Tanah dengan Kontrol Pompa Otomatis Berbasis Website dan Machine Learning pada Tanaman Cabai.",
+    tech: [
+      "Next.js",
+      "Auth.js",
+      "Firebase",
+      "JupyterNoteBook",
+      "3D Design Blender",
+    ],
+    image: "/project/iotani.png",
+    bg: "bg-zinc-950",
+    Link: "https://io-tani-project.vercel.app",
   },
   {
     id: 2,
-    title: "Lumina Commerce",
+    title: "CV.Boenha Makmur Utama",
     description:
-      "Headless e-commerce solution built for speed. Integrated with Stripe Connect for multi-vendor marketplaces and complex tax handling.",
-    tech: ["React", "Node.js", "PostgreSQL", "Stripe"],
-    image: "https://placehold.co/800x600/18181b/ffffff?text=Commerce+Mockup",
-    color: "from-emerald-900/20 to-teal-900/20",
+      "Website ini dibuat menggunakan Next.js dengan bahasa typescript dan dikembangkan menggunakan Node Package Manager (NPM). Didalamnya package terdapat framer motion, i18next, lucide react, swiper, dan react icons.",
+    tech: ["Typescript", "Next.js", "SEO Metadata"],
+    image: "/project/boenha.png",
+    bg: "bg-zinc-950",
+    Link: "https://boenha-next.vercel.app/",
   },
   {
     id: 3,
@@ -24,7 +32,7 @@ export const projects = [
       "Conversational AI interface with generative UI components. Features streaming responses and context-aware component rendering.",
     tech: ["OpenAI API", "Tailwind CSS", "Prisma", "Redis"],
     image: "https://placehold.co/800x600/18181b/ffffff?text=AI+Interface",
-    color: "from-orange-900/20 to-red-900/20",
+    bg: "bg-zinc-950",
   },
 ];
 

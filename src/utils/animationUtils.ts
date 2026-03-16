@@ -33,54 +33,54 @@ export const scrambleText = (element: HTMLElement, originalText: string) => {
 
 export const createScrambleAnimation = (
   element: HTMLElement,
-  text: string,
+  text?: string,
   symbols: string = SYMBOLS_SMALL,
 ) => {
-  const tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: element,
-      start: "top 42%",
-      end: "bottom top",
-      scrub: true,
-      pin: false,
-    },
-  });
+  const targetText = text && text.length > 0 ? text : element.innerText;
+  const initialHeight = element.offsetHeight;
+  if (initialHeight > 0) {
+    element.style.minHeight = `${initialHeight}px`;
+  }
 
   const counter = { value: 0 };
-  tl.to(
-    counter,
-    {
-      value: 1,
-      ease: "none",
-      onUpdate: () => {
-        const progress = counter.value;
-        const length = text.length;
-        let result = "";
+  gsap.to(counter, {
+    value: 1.1,
+    duration: 0.9,
+    ease: "power1.out",
+    scrollTrigger: {
+      trigger: element,
+      start: "top 75%",
+      toggleActions: "play none none none",
+      scrub: true,
+    },
+    onUpdate: () => {
+      const progress = counter.value;
+      const length = targetText.length;
+      const revealIndex = Math.floor(progress * length);
+      let result = "";
 
-        const scrambleIndex = Math.floor(progress * length);
+      for (let i = 0; i < length; i++) {
+        const char = targetText[i];
 
-        for (let i = 0; i < length; i++) {
-          if (i < scrambleIndex) {
-            result += symbols[Math.floor(Math.random() * symbols.length)];
-          } else {
-            result += text[i];
-          }
+        if (/\s/.test(char)) {
+          result += char;
+          continue;
         }
 
-        if (element) {
-          element.innerText = result;
+        if (i < revealIndex) {
+          result += char;
+        } else {
+          result += symbols[Math.floor(Math.random() * symbols.length)];
         }
-      },
-    },
-    0,
-  );
+      }
 
-  tl.to(
-    element,
-    {
-      opacity: 0,
-      ease: "none",
+      element.innerText = result;
     },
-    0,
-  );
+    onComplete: () => {
+      element.innerText = targetText;
+      if (initialHeight > 0) {
+        element.style.minHeight = "";
+      }
+    },
+  });
 };

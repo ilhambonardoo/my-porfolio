@@ -55,14 +55,14 @@ export default function Hero() {
     >
       <div
         ref={bgRef}
-        className="absolute inset-0 z-0 bg-black"
-        style={{ transform: "scale(1.2)" }}
+        className="absolute inset-0 z-0 bg-black scale-110 md:scale-125"
       >
         <Image
           src="/person/ilham2.png"
           alt="background-hero"
           fill
-          className="object-cover opacity-40 "
+          className="object-cover object-[70%_20%] md:object-center opacity-30 md:opacity-40"
+          sizes="100vw"
           priority
         />
         <div className="absolute inset-0 bg-linear-to-b from-transparent via-black/50 to-zinc-950" />

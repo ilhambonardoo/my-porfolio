@@ -28,4 +28,9 @@ export const experiences = [
     description:
       "Mempelajari fondasi web modern mulai dari HTML, CSS, JavaScript hingga membangun aplikasi dengan React dan Next.js.",
   },
+  {
+    period: "2023 - 2024",
+    title: "Juara Basket Turnamen Olimpiade Mahasiswa IPB",
+    description: "Melatih fisik dan kemampuan untuk bekerja sama antar tim.",
+  },
 ];

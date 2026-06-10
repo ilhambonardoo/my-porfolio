@@ -60,7 +60,10 @@ export default function ProjectShowcase() {
             />
             <div className="absolute inset-0 bg-linear-to-br from-black/60 via-black/40 to-zinc-950/80" />
           </div>
-          <h2 className="project-first-title text-5xl md:text-7xl z-50 font-bold text-white text-center tracking-tight">
+          <h2 className="project-first-title text-5xl md:text-7xl z-50 font-bold text-white text-center tracking-tight hidden md:block">
+            P R O J E C T
+          </h2>
+          <h2 className="text-5xl md:text-7xl z-50 font-bold text-white text-center tracking-tight md:hidden">
             P R O J E C T
           </h2>
         </div>

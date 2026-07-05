@@ -6,9 +6,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import Image from "next/image";
 import { projects } from "../../constant/project";
-import { UseDesktopProjectAnimation } from "../../hooks/useDesktopProjectAnimation";
-import { UseMobileProjectAnimation } from "../../hooks/useMobileProjectAnimation";
+import { UseProjectAnimation } from "../../hooks/useProjectAnimation";
 import Link from "next/link";
+import useMounted from "@/src/hooks/useMounted";
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
@@ -16,6 +16,7 @@ if (typeof window !== "undefined") {
 export default function ProjectShowcase() {
   const containerRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
+  const mounted = useMounted();
 
   useGSAP(
     () => {
@@ -24,20 +25,22 @@ export default function ProjectShowcase() {
       ScrollTrigger.matchMedia({
         "(min-width: 768px)": () => {
           if (trackRef.current) {
-            UseDesktopProjectAnimation(
-              slides,
-              trackRef as React.RefObject<HTMLDivElement>,
-              projects.length,
-            );
+            UseProjectAnimation(slides, trackRef.current, projects.length);
           }
         },
         "(max-width: 767px)": () => {
-          UseMobileProjectAnimation(slides);
+          if (trackRef.current) {
+            UseProjectAnimation(slides, trackRef.current, projects.length);
+          }
         },
       });
     },
     { scope: containerRef },
   );
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <section

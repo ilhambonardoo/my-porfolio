@@ -35,7 +35,7 @@ export default function ProjectShowcase() {
         },
       });
     },
-    { scope: containerRef },
+    { scope: containerRef, dependencies: [mounted] },
   );
 
   if (!mounted) {

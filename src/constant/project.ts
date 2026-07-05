@@ -53,6 +53,17 @@ export const projects = [
     Link: "/video/smart.mp4",
     bg: "bg-zinc-950",
   },
+  {
+    id: 5,
+    title: "Squeeze Cage",
+    description:
+      "Sistem penimbangan jepit kambing atau domba berbasis Web dan Machine Learning. Website yang mengelola ternak dengan fitur CRUD yang ada di Next.JS menggunakan prisma model dan database postgreSQL terhubung langunsung ke Supabase. Kemudian, machine learning diimplementasikan menggunakan Anaconda Jupyter notebook dan server ML dijalankan menggunakan FAST API.",
+
+    tech: ["ESP32", "Next.JS", "Jupyter Notebook", "Fast API", "Load Cell"],
+    image: "/project/squeeze.png",
+    Link: "https://squeeze-cage.vercel.app",
+    bg: "bg-zinc-950",
+  },
 ];
 
 export const persons = [
@@ -62,10 +73,10 @@ export const persons = [
   },
   {
     id: 3,
-    hobby: "Athlete",
+    hobby: "Machine Learning",
   },
   {
     id: 2,
-    hobby: "Music",
+    hobby: "IoT",
   },
 ];

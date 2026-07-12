@@ -3,12 +3,12 @@ export const projects = [
     id: 1,
     title: "IoTani",
     description:
-      "Sistem Pengukuran pH dan Kelembaban Tanah dengan Kontrol Pompa Otomatis Berbasis Website dan Machine Learning pada Tanaman Cabai.",
+      "A web-based soil pH and moisture measurement system integrated with automatic pump control and Machine Learning predictive models for chili pepper cultivation.",
     tech: [
       "Next.js",
       "Auth.js",
       "Firebase",
-      "JupyterNoteBook",
+      "Jupyter Notebook",
       "3D Design Blender",
     ],
     image: "/project/iotani.png",
@@ -19,8 +19,8 @@ export const projects = [
     id: 2,
     title: "CV.Boenha Makmur Utama",
     description:
-      "Website ini dibuat menggunakan Next.js dengan bahasa typescript dan dikembangkan menggunakan Node Package Manager (NPM). Didalamnya package terdapat framer motion, i18next, lucide react, swiper, dan react icons.",
-    tech: ["Typescript", "Next.js", "SEO Metadata"],
+      "A corporate profile website built with Next.js and TypeScript utilizing modern Node Package Manager (NPM) ecosystems, featuring seamless integration of Framer Motion, i18next, Lucide React, Swiper, and React Icons.",
+    tech: ["TypeScript", "Next.js", "SEO Metadata"],
     image: "/project/boenha.png",
     bg: "bg-zinc-950",
     Link: "https://boenha-next.vercel.app/",
@@ -29,9 +29,8 @@ export const projects = [
     id: 3,
     title: "One Fish",
     description:
-      "Website portfolio toko ikan One Fish. Menyelam ke dalam koleksi curated keunggulan akuatik. Dipilih dengan cermat untuk memastikan vitalitas yang tak tertandingi dan keindahan yang menakjubkan.",
-
-    tech: ["NodeJS", "Tailwind CSS", "Next.js", "Cloudinary"],
+      "A portfolio and catalog website for One Fish aquarium store. Dive into a curated collection of aquatic excellence, meticulously selected to ensure unparalleled vitality and stunning beauty.",
+    tech: ["Node.js", "Tailwind CSS", "Next.js", "Cloudinary"],
     image: "/project/onefish.png",
     Link: "https://onefish.vercel.app/",
     bg: "bg-zinc-950",
@@ -40,12 +39,11 @@ export const projects = [
     id: 4,
     title: "Smart Parking Light",
     description:
-      "Membuat sistem parkir otomatis yang berguna untuk menghitung jumlah mobil yang sudah masuk dalam 1 hari. Selain itu, parkiran tersebut memberikan informasi jika lampu warna merah maka parkiran tersebut telah terisi. Kemudian, jika warna hijau parkiran kosong",
-
+      "An automated digital parking system engineered to track and count vehicle entries. The infrastructure provides real-time occupancy updates, utilizing green LED indicators for vacant slots and red for occupied spaces.",
     tech: [
       "Seven Segment",
-      "Kabel Jumper",
-      "LDR (Light Depentdent Resistor)",
+      "Jumper Wires",
+      "LDR (Light Dependent Resistor)",
       "IC 7404",
       "LED",
     ],
@@ -57,9 +55,8 @@ export const projects = [
     id: 5,
     title: "Squeeze Cage",
     description:
-      "Sistem penimbangan jepit kambing atau domba berbasis Web dan Machine Learning. Website yang mengelola ternak dengan fitur CRUD yang ada di Next.JS menggunakan prisma model dan database postgreSQL terhubung langunsung ke Supabase. Kemudian, machine learning diimplementasikan menggunakan Anaconda Jupyter notebook dan server ML dijalankan menggunakan FAST API.",
-
-    tech: ["ESP32", "Next.JS", "Jupyter Notebook", "Fast API", "Load Cell"],
+      "An automated weighing and squeezing cage system for goats and sheep integrated with a Web Dashboard and Machine Learning. The platform manages livestock data through a Next.js full-stack framework with Prisma ORM and PostgreSQL (hosted on Supabase), while the predictive ML models are deployed seamlessly using FastAPI.",
+    tech: ["ESP32", "Next.js", "Jupyter Notebook", "FastAPI", "Load Cell"],
     image: "/project/squeeze.png",
     Link: "https://squeeze-cage.vercel.app",
     bg: "bg-zinc-950",
@@ -69,7 +66,7 @@ export const projects = [
 export const persons = [
   {
     id: 1,
-    hobby: "Web Dev",
+    hobby: "Web Development",
   },
   {
     id: 3,
@@ -77,6 +74,6 @@ export const persons = [
   },
   {
     id: 2,
-    hobby: "IoT",
+    hobby: "IoT (Internet of Things)",
   },
 ];

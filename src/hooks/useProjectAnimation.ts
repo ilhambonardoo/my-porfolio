@@ -12,7 +12,7 @@ export const UseProjectAnimation = (
   const totalPanels = projectsLength + 1;
 
   const scrollTween = gsap.to(trackElement, {
-    xPercent: -100 * (totalPanels - 1),
+    xPercent: -120 * (totalPanels - 1),
     ease: "none",
     scrollTrigger: {
       trigger: trackElement.parentElement,

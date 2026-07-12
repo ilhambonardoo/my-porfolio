@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Certification = () => {
   return (
-    <section className="relative overflow-hidden bg-neutral-950 text-white py-14">
+    <section className="relative overflow-hidden bg-neutral-950 text-white">
       <div className="relative mx-auto w-full max-w-7xl md:px-10 px-5">
         {/* Header Section */}
         <div className="mb-12 md:mb-16">

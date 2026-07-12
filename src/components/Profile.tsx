@@ -43,7 +43,7 @@ const Profile = () => {
               <div className="relative md:w-full ml-6 w-59.25 h-45.5 lg:w-100 lg:h-70  max-w-sm aspect-4/5 rounded-2xl overflow-hidden ring-1 ring-white/15 bg-zinc-900 shadow-2xl">
                 <Image
                   src="/person/ilham2.png"
-                  alt="Foto profil Ilham"
+                  alt="Ilham's profile picture"
                   fill
                   className="object-cover "
                   priority
@@ -64,17 +64,17 @@ const Profile = () => {
                 Ilham Bonardo Marpaung
               </h3>
               <p className="mt-4 text-zinc-300 text-justify lg:text-left leading-relaxed text-base md:text-lg font-helvetica">
-                Mahasiswa semester 6 Sekolah Vokasi IPB University program studi
-                Teknologi Rekayasa Komputer dengan fokus keahlian di bidang
-                Software Development. Memiliki pengalaman praktis sebagai
-                freelance web developer dalam merancang dan membangun website
-                fungsional menggunakan Codeigneter4, Next.js, Laravel, dan
-                Nuxt.js. Memiliki ketertarikan dan mengintegrasikan dalam
-                pengembangan IoT (Internet Of Things), khususnya dalam
-                mengintegrasikan perangkat keras dengan sistem berbasis web
-                (Dashboard & Monitoring). Memiliki kemampuan untuk
-                mengintegrasikan Machine Learning dengan Web seperti memprediksi
-                suatu masalah dan sistem deteksi menggunakan citra.
+                A 6th-semester Computer Engineering Technology student at the
+                College of Vocational Studies - IPB University, specializing in
+                Software Development. Armed with hands-on experience as a
+                freelance web developer, I design and architect functional
+                websites using modern frameworks such as CodeIgniter 4, Next.js,
+                Laravel, and Nuxt.js. I have a strong passion for the Internet
+                of Things (IoT), particularly in integrating hardware components
+                with web-based systems for centralized dashboards and real-time
+                monitoring. Additionally, I possess the capabilities to bridge
+                Machine Learning with web applications to deliver predictive
+                analysis and robust computer vision systems.
               </p>
             </div>
           </div>

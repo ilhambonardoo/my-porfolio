@@ -4,52 +4,52 @@ export const skills = [
   {
     title: "Software Engineering & Full Stack Web Dev",
     description:
-      "Merancang dan membangun sistem web fungsional dari frontend hingga backend menggunakan framework modern seperti Node.js, Next.js, Laravel, CodeIgniter 4, dan Nuxt.js.",
+      "Designing and developing functional web systems from frontend to backend using modern frameworks such as Node.js, Next.js, Laravel, CodeIgniter 4, and Nuxt.js.",
   },
   {
     title: "Hardware Engineering & IoT Ecosystems",
     description:
-      "Mengembangkan perangkat keras menggunakan mikrokontroler (ESP32/ESP8266/Arduino) serta mengintegrasikannya dengan sistem berbasis web untuk dashboard & monitoring.",
+      "Developing hardware solutions utilizing microcontrollers (ESP32/ESP8266/Arduino) and seamlessly integrating them with web-based platforms for dashboards & real-time monitoring.",
   },
   {
     title: "Machine Learning Integration",
     description:
-      "Mengintegrasikan model kecerdasan buatan dengan platform web untuk kebutuhan sistem deteksi berbasis citra (image recognition) serta analisis prediktif.",
+      "Integrating artificial intelligence models into web platforms to support computer vision systems (image recognition) and predictive analytics.",
   },
   {
     title: "Team Collaboration & Adaptability",
     description:
-      "Kemampuan beradaptasi dengan cepat di lingkungan dinamis serta berkolaborasi secara efektif dalam tim untuk menyelesaikan proyek rekayasa.",
+      "Demonstrating agility in fast-paced environments and collaborating effectively within cross-functional teams to deliver engineering projects successfully.",
   },
 ];
 
 export const educations = [
   {
     id: 1,
-    institution: "Sekolah Vokasi IPB University",
-    program: "Teknologi Rekayasa Komputer",
-    period: "2023 - Sekarang",
+    institution: "College of Vocational Studies - IPB University",
+    program: "Computer Engineering Technology",
+    period: "2023 - Present",
     gpa: "GPA: 3.60/4.00",
     description:
-      "Fokus pada pengembangan software, IoT, dan Machine Learning. Aktif dalam proyek pengembangan web.",
+      "Specializing in software development, Internet of Things (IoT), and Machine Learning. Actively engaged in various web engineering and development projects.",
   },
   {
     id: 2,
-    institution: "SMA MARDI YUANA BOGOR",
-    program: "IPA",
+    institution: "Mardi Yuana High School Bogor",
+    program: "Natural Sciences (IPA)",
     period: "2019 - 2022",
     gpa: "",
     description:
-      "Lulus dengan predikat baik. Aktif dalam kegiatan ekstrakurikuler dan organisasi sekolah.",
+      "Graduated with honors. Actively participated in extracurricular activities and student organizations.",
   },
 ];
 
 export const certifications = [
   {
-    title: "Sertifikat Peserta Lomba Web Development",
+    title: "Web Development Competition Participant Certificate",
     logo: "/certification/lomba.jpeg",
     description:
-      "Berkontribusi aktif sebagai Backend Developer dalam merancang arsitektur database, membangun RESTful API yang efisien, serta memastikan integrasi sistem berjalan dengan lancar sepanjang kompetisi.",
+      "Contributed actively as a Backend Developer by architecting database schemas, building efficient RESTful APIs, and ensuring seamless system integration throughout the competition.",
   },
 ];
 

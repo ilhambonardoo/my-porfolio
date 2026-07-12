@@ -4,6 +4,8 @@ import ProjectShowcase from "@/src/components/ProjectShowCase/ProjectShowCaseDek
 import ProjectShowCaseMobile from "@/src/components/ProjectShowCase/ProjectShowCaseMobile";
 import Profile from "@/src/components/Profile";
 import { useEffect, useState } from "react";
+import Education from "../components/Education";
+import Capabilities from "../components/Capabilities";
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -29,9 +31,11 @@ export default function Home() {
     <main>
       <Hero />
       <Profile />
+      <Capabilities />
+      <Education />
       {isMobile ? <ProjectShowCaseMobile /> : <ProjectShowcase />}
       <div className="min-h-screen bg-zinc-900 text-white flex items-center justify-center">
-        <h2 className="text-4xl font-bold">Another Section</h2>
+        <div></div>
       </div>
     </main>
   );

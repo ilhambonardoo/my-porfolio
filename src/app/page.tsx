@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import Education from "../components/Education";
 import Capabilities from "../components/Capabilities";
 import Certification from "../components/Certification";
+import Contact from "../components/Contact";
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -40,6 +41,7 @@ export default function Home() {
           <Certification />
         </div>
       </div>
+      <Contact />
     </main>
   );
 }

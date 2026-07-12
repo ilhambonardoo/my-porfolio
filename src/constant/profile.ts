@@ -1,3 +1,5 @@
+import { BsGithub, BsInstagram, BsLinkedin, BsWhatsapp } from "react-icons/bs";
+
 export const skills = [
   {
     title: "Software Engineering & Full Stack Web Dev",
@@ -47,6 +49,25 @@ export const certifications = [
     title: "Sertifikat Peserta Lomba Web Development",
     logo: "/certification/lomba.jpeg",
     description:
-      "Berkontribusi aktif sebagai Backend Developer dalam merancang aristektur database dan membangun RestFul API yang efisien. ",
+      "Berkontribusi aktif sebagai Backend Developer dalam merancang arsitektur database, membangun RESTful API yang efisien, serta memastikan integrasi sistem berjalan dengan lancar sepanjang kompetisi.",
+  },
+];
+
+export const contact = [
+  {
+    icon: BsGithub,
+    src: "https://github.com/ilhambonardoo",
+  },
+  {
+    icon: BsWhatsapp,
+    src: "https://wa.me/6285884153418",
+  },
+  {
+    icon: BsInstagram,
+    src: "https://www.instagram.com/ilhambonardoo/",
+  },
+  {
+    icon: BsLinkedin,
+    src: "https://www.linkedin.com/in/ilham-bonardo-marpaung-98875a33a/",
   },
 ];

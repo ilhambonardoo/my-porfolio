@@ -81,7 +81,7 @@ export default function Hero() {
           ))}
         </div>
         <p className="mt-4 text-zinc-400 text-lg md:text-xl opacity-80">
-          Scroll down to see the effect
+          Scroll down to see my experience
         </p>
       </div>
     </div>

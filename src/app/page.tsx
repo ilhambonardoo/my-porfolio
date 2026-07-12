@@ -6,6 +6,7 @@ import Profile from "@/src/components/Profile";
 import { useEffect, useState } from "react";
 import Education from "../components/Education";
 import Capabilities from "../components/Capabilities";
+import Certification from "../components/Certification";
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -34,8 +35,10 @@ export default function Home() {
       <Capabilities />
       <Education />
       {isMobile ? <ProjectShowCaseMobile /> : <ProjectShowcase />}
-      <div className="min-h-screen bg-zinc-900 text-white flex items-center justify-center">
-        <div></div>
+      <div className="min-h-screen text-white flex items-center justify-center">
+        <div>
+          <Certification />
+        </div>
       </div>
     </main>
   );

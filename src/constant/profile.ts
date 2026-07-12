@@ -41,3 +41,12 @@ export const educations = [
       "Lulus dengan predikat baik. Aktif dalam kegiatan ekstrakurikuler dan organisasi sekolah.",
   },
 ];
+
+export const certifications = [
+  {
+    title: "Sertifikat Peserta Lomba Web Development",
+    logo: "/certification/lomba.jpeg",
+    description:
+      "Berkontribusi aktif sebagai Backend Developer dalam merancang aristektur database dan membangun RestFul API yang efisien. ",
+  },
+];

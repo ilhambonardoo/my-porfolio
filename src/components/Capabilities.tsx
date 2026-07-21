@@ -11,7 +11,7 @@ const Capabilities = () => {
   };
 
   return (
-    <section className="mx-auto bg-neutral-950 text-white py-14 max-w-7xl">
+    <section className="mx-auto bg-neutral-950 text-white py-14 w-full lg:px-56">
       <div className="rounded-2xl p-6 md:p-8 lg:w-full">
         <div className="flex gap-2">
           <h3 className="text-5xl font-semibold tracking-tight">

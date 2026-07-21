@@ -36,7 +36,7 @@ export default function Home() {
       <Capabilities />
       <Education />
       {isMobile ? <ProjectShowCaseMobile /> : <ProjectShowcase />}
-      <div className="min-h-screen text-white flex items-center justify-center">
+      <div className="min-h-screen text-white bg-neutral-950 flex items-center justify-center">
         <div>
           <Certification />
         </div>

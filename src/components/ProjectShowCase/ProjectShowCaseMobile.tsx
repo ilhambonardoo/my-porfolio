@@ -52,7 +52,7 @@ export default function ProjectShowCaseMobile() {
               P R O J E C T
             </h2>
             <p className="mt-4 text-sm text-zinc-400 max-w-xs">
-              Scroll untuk bisa melihat.
+              Scroll down to see my experience.
             </p>
           </div>
         </div>

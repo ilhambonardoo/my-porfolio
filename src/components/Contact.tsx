@@ -12,7 +12,7 @@ const Contact = () => {
               </h1>
               <div className="flex flex-col justify-center items-center gap-4 mt-4 md:mt-2">
                 <p className="font-light text-neutral-300 text-sm md:text-base">
-                  Email : ilhambonardo123@gmail.com
+                  Email : ilhambonardomarpaung@gmail.com
                 </p>
                 <p className="font-light text-neutral-300 text-sm md:text-base">
                   Phone : 085884153418

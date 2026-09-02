@@ -8,6 +8,7 @@ import Education from "../components/Education";
 import Capabilities from "../components/Capabilities";
 import Certification from "../components/Certification";
 import Contact from "../components/Contact";
+import ChatBot from "../components/Chatbot";
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -33,6 +34,7 @@ export default function Home() {
     <main>
       <Hero />
       <Profile />
+      <ChatBot />
       <Capabilities />
       <Education />
       {isMobile ? <ProjectShowCaseMobile /> : <ProjectShowcase />}

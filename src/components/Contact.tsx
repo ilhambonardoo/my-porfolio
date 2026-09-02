@@ -1,4 +1,4 @@
-import { contact } from "../constant/profile";
+import { contact } from "../lib/constant/profile";
 
 const Contact = () => {
   return (

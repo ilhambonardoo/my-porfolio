@@ -1,6 +1,6 @@
 "use client";
 
-import { educations } from "../constant/profile";
+import { educations } from "../lib/constant/profile";
 import { FaGraduationCap } from "react-icons/fa";
 
 const Education = () => {

@@ -5,7 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import Image from "next/image";
-import { persons } from "../constant/project";
+import { persons } from "../lib/constant/project";
 import { ScrambleText } from "../hooks/useScrambleText";
 import { createScrambleAnimation, SYMBOLS } from "../utils/animationUtils";
 

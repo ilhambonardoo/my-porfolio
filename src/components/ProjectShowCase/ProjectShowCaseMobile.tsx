@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import Image from "next/image";
 import Link from "next/link";
-import { projects } from "../../constant/project";
+import { projects } from "../../lib/constant/project";
 import { UseProjectAnimation } from "../../hooks/useProjectAnimation";
 import useMounted from "@/src/hooks/useMounted";
 

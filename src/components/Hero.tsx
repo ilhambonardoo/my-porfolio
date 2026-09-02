@@ -7,7 +7,7 @@ import { useGSAP } from "@gsap/react";
 import Image from "next/image";
 import { persons } from "../lib/constant/project";
 import { ScrambleText } from "../hooks/useScrambleText";
-import { createScrambleAnimation, SYMBOLS } from "../utils/animationUtils";
+import { createScrambleAnimation, SYMBOLS } from "../lib/utils/animationUtils";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);

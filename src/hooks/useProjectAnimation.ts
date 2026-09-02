@@ -1,6 +1,6 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { scrambleText } from "../utils/animationUtils";
+import { scrambleText } from "../lib/utils/animationUtils";
 
 export const UseProjectAnimation = (
   slides: HTMLElement[],

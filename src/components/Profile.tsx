@@ -4,7 +4,7 @@ import { useRef } from "react";
 import {
   createScrambleAnimation,
   SYMBOLS_SMALL,
-} from "../utils/animationUtils";
+} from "../lib/utils/animationUtils";
 
 const Profile = () => {
   const sectionRef = useRef<HTMLElement>(null);

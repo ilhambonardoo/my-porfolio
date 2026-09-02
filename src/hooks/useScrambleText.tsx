@@ -3,7 +3,7 @@ import { useGSAP } from "@gsap/react";
 import {
   createScrambleAnimation,
   SYMBOLS_SMALL,
-} from "../utils/animationUtils";
+} from "../lib/utils/animationUtils";
 
 export const ScrambleText = ({ text }: { text: string; index: number }) => {
   const elRef = useRef<HTMLDivElement>(null);

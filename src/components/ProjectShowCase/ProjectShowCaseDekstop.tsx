@@ -45,30 +45,25 @@ export default function ProjectShowcase() {
   return (
     <section
       ref={containerRef}
-      className="relative bg-zinc-950 text-white overflow-hidden"
+      className="relative overflow-hidden bg-stone-100 text-stone-900 dark:bg-zinc-950 dark:text-white"
     >
       <div
         ref={trackRef}
         className="flex flex-col md:flex-row w-full md:h-screen h-auto"
         style={{ width: "100%" }}
       >
-        <div className="w-full h-screen md:w-screen md:h-full flex items-center justify-center p-6 md:p-24 border-b md:border-b-0 md:border-r bg-black border-zinc-800 shrink-0 relative overflow-hidden">
+        <div className="relative flex h-screen w-full shrink-0 items-center justify-center overflow-hidden border-b border-stone-300 bg-stone-200 p-6 dark:border-zinc-800 dark:bg-black md:h-full md:w-screen md:border-b-0 md:border-r md:p-24">
           <div className="absolute inset-0 z-0">
-            <Image
-              src={"/bgSlide/bg1.jpeg"}
-              fill
-              alt="background"
-              className="object-cover opacity-60"
-              priority
-            />
-            <div className="absolute inset-0 bg-linear-to-br from-black/60 via-black/40 to-zinc-950/80" />
+            <div className="absolute inset-0 bg-linear-to-br from-stone-200/30 via-stone-100/10 to-stone-200/50 dark:from-black/60 dark:via-black/40 dark:to-zinc-950/80" />
           </div>
-          <h2 className="project-first-title text-5xl md:text-7xl z-50 font-bold text-white text-center tracking-tight hidden md:block">
-            P R O J E C T
-          </h2>
-          <h2 className="text-5xl md:text-7xl z-50 font-bold text-white text-center tracking-tight md:hidden">
-            P R O J E C T
-          </h2>
+          <div className="relative z-10 text-center">
+            <h2 className="project-first-title text-6xl font-bold tracking-tight text-stone-900 dark:text-white">
+              P R O J E C T
+            </h2>
+            <p className="mt-4 max-w-xs text-lg text-stone-800 dark:text-zinc-400">
+              Scroll down to see my project.
+            </p>
+          </div>
         </div>
         {projects.map((project) => (
           <div
@@ -78,11 +73,11 @@ export default function ProjectShowcase() {
             <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-7xl gap-12">
               <div className="project-info w-full md:w-1/2 flex flex-col gap-6 items-start z-10">
                 <div className="overflow-hidden">
-                  <h2 className="project-title text-5xl md:text-7xl font-bold tracking-tight text-white mb-2">
+                  <h2 className="project-title mb-2 text-5xl font-bold tracking-tight text-stone-900 dark:text-white md:text-7xl">
                     {project.title}
                   </h2>
                 </div>
-                <p className="text-zinc-300 text-lg md:text-xl leading-relaxed max-w-lg">
+                <p className="max-w-lg text-lg leading-relaxed text-stone-600 dark:text-zinc-300 md:text-xl">
                   {project.description}
                 </p>
 
@@ -90,7 +85,7 @@ export default function ProjectShowcase() {
                   {project.tech.map((tech) => (
                     <span
                       key={tech}
-                      className="tech-badge px-4 py-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full text-sm font-medium text-zinc-100"
+                      className="tech-badge rounded-full border border-stone-300 bg-white/70 px-4 py-2 text-sm font-medium text-stone-700 backdrop-blur-md dark:border-white/20 dark:bg-white/10 dark:text-zinc-100"
                     >
                       {tech}
                     </span>
@@ -108,7 +103,7 @@ export default function ProjectShowcase() {
                     alt={project.title}
                     width={800}
                     height={600}
-                    className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
+                    className="h-full w-full object-cover opacity-90 transition-opacity duration-500 group-hover:opacity-100 dark:opacity-80"
                   />
                 </Link>
               </div>

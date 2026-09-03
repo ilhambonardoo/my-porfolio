@@ -3,7 +3,7 @@ import { contact } from "../lib/constant/profile";
 const Contact = () => {
   return (
     <>
-      <section className="min-h-screen flex justify-center items-center bg-neutral-950 text-white px-5 md:px-0">
+      <section className="flex min-h-screen items-center justify-center bg-stone-100 px-5 text-stone-900 dark:bg-neutral-950 dark:text-white md:px-0">
         <div>
           <div className="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-0">
             <div className="text-center md:text-left">
@@ -11,10 +11,10 @@ const Contact = () => {
                 CONTACT
               </h1>
               <div className="flex flex-col justify-center items-center gap-4 mt-4 md:mt-2">
-                <p className="font-light text-neutral-300 text-sm md:text-base">
+                <p className="text-sm font-light text-stone-600 dark:text-neutral-300 md:text-base">
                   Email : ilhambonardomarpaung@gmail.com
                 </p>
-                <p className="font-light text-neutral-300 text-sm md:text-base">
+                <p className="text-sm font-light text-stone-600 dark:text-neutral-300 md:text-base">
                   Phone : 085884153418
                 </p>
               </div>

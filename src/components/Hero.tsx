@@ -51,11 +51,11 @@ export default function Hero() {
   return (
     <div
       ref={containerRef}
-      className="relative h-screen w-full overflow-hidden bg-zinc-950 text-white flex items-center justify-center"
+      className="relative flex h-screen w-full items-center justify-center overflow-hidden bg-stone-100 text-stone-900 dark:bg-zinc-950 dark:text-white"
     >
       <div
         ref={bgRef}
-        className="absolute inset-0 z-0 bg-black scale-110 md:scale-125"
+        className="absolute inset-0 z-0 scale-110 bg-stone-200 md:scale-125 dark:bg-black"
       >
         <Image
           src="/person/ilham2.png"
@@ -65,7 +65,7 @@ export default function Hero() {
           sizes="100vw"
           priority
         />
-        <div className="absolute inset-0 bg-linear-to-b from-transparent via-black/50 to-zinc-950" />
+        <div className="absolute inset-0 bg-linear-to-b from-transparent via-black/50 dark:to-zinc-950" />
       </div>
 
       <div className="relative z-10 text-center px-4">
@@ -80,7 +80,7 @@ export default function Hero() {
             <ScrambleText key={person.id} text={person.hobby} index={index} />
           ))}
         </div>
-        <p className="mt-4 text-zinc-400 text-lg md:text-xl opacity-80">
+        <p className="mt-4 text-lg text-stone-100 opacity-80 md:text-xl dark:text-zinc-400">
           Scroll down to see my experience
         </p>
       </div>

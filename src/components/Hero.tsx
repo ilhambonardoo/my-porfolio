@@ -24,7 +24,7 @@ export default function Hero() {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: containerRef.current,
-          start: "top 75%",
+          start: "top top",
           end: "bottom top",
           scrub: true,
           pin: false,

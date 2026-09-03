@@ -2,7 +2,6 @@
 import Hero from "@/src/components/Hero";
 import ProjectShowcase from "@/src/components/ProjectShowCase/ProjectShowCaseDekstop";
 import ProjectShowCaseMobile from "@/src/components/ProjectShowCase/ProjectShowCaseMobile";
-import Profile from "@/src/components/Profile";
 import { useEffect, useState } from "react";
 import Education from "../components/Education";
 import Capabilities from "../components/Capabilities";
@@ -33,7 +32,6 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <Profile />
       <ChatBot />
       <Capabilities />
       <Education />

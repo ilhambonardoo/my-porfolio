@@ -108,14 +108,6 @@ Tautan Website : https://io-tani-project.vercel.app/
     metadata: { category: "projects", project: "iotani" },
   }),
 
-  // 6. IoT Realtime Dashboard
-  new Document({
-    pageContent: `Proyek Ilham Bonardo Marpaung - IoT Realtime Dashboard:
-Judul Proyek: IoT Realtime Dashboard
-Deskripsi: Menghubungkan perangkat keras ESP32 dengan web Next.js untuk monitoring data sensor secara realtime.`,
-    metadata: { category: "projects", project: "iot-dashboard" },
-  }),
-
   // --- FAQ & KONTAK ---
   new Document({
     pageContent: `Informasi Tambahan, Keunggulan, & Kontak Ilham Bonardo Marpaung:

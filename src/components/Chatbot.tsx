@@ -86,48 +86,48 @@ export default function Chatbot() {
   return (
     <section
       id="chatbot"
-      className="relative overflow-hidden bg-zinc-950 px-5 py-24 text-white md:px-10 md:py-32"
+      className="relative overflow-hidden bg-stone-100 px-5 py-24 text-stone-900 dark:bg-zinc-950 dark:text-white md:px-10 md:py-32"
     >
       <div className="mx-auto max-w-6xl">
-        <div className="mb-12 flex flex-col justify-between gap-8 border-b border-white/10 pb-8 md:flex-row md:items-end">
+        <div className="mb-12 flex flex-col justify-between gap-8 border-b border-stone-300 pb-8 dark:border-white/10 md:flex-row md:items-end">
           <div>
-            <div className="mb-5 flex items-center gap-3 text-xs uppercase tracking-[0.28em] text-zinc-500">
+            <div className="mb-5 flex items-center gap-3 text-xs uppercase tracking-[0.28em] text-stone-500 dark:text-zinc-500">
               <span>Interactive profile</span>
             </div>
             <h2 className="max-w-3xl font-nb text-5xl font-semibold leading-[0.9] tracking-tight sm:text-7xl md:text-8xl">
               DEFINITION
             </h2>
           </div>
-          <p className="max-w-xs text-sm leading-6 text-zinc-400 md:text-right">
+          <p className="max-w-xs text-sm leading-6 text-stone-600 dark:text-zinc-400 md:text-right">
             Kenali cara kerja, pengalaman, dan project melalui percakapan
             singkat.
           </p>
         </div>
 
-        <div className="grid overflow-hidden border border-white/10 bg-white/3 lg:grid-cols-[0.8fr_1.2fr]">
-          <div className="flex flex-col justify-between border-b border-white/10 p-6 sm:p-8 lg:border-b-0 lg:border-r">
+        <div className="grid overflow-hidden border border-stone-300 bg-white/70 dark:border-white/10 dark:bg-white/3 lg:grid-cols-[0.8fr_1.2fr]">
+          <div className="flex flex-col justify-between border-b border-stone-300 p-6 dark:border-white/10 sm:p-8 lg:border-b-0 lg:border-r">
             <div>
-              <p className="mb-3 text-xs uppercase tracking-[0.24em] text-zinc-500">
+              <p className="mb-3 text-xs uppercase tracking-[0.24em] text-stone-500 dark:text-zinc-500">
                 Portfolio assistant
               </p>
-              <p className="max-w-sm text-2xl leading-tight text-zinc-200 sm:text-3xl">
+              <p className="max-w-sm text-2xl leading-tight text-stone-800 dark:text-zinc-200 sm:text-3xl">
                 Satu pertanyaan untuk menemukan konteks yang tepat.
               </p>
             </div>
-            <div className="mt-14 border-l border-white/20 pl-4 text-sm leading-6 text-zinc-500">
+            <div className="mt-14 border-l border-stone-400 pl-4 text-sm leading-6 text-stone-500 dark:border-white/20 dark:text-zinc-500">
               Coba tanyakan: &quot;Apa project yang paling menantang?&quot;
             </div>
           </div>
 
-          <div className="flex h-124 min-h-0 flex-col bg-black/20">
-            <div className="flex items-center justify-between border-b border-white/10 px-5 py-4 sm:px-8">
-              <span className="text-xs uppercase tracking-[0.2em] text-zinc-500">
+          <div className="flex h-124 min-h-0 flex-col bg-stone-200/70 dark:bg-black/20">
+            <div className="flex items-center justify-between border-b border-stone-300 px-5 py-4 dark:border-white/10 sm:px-8">
+              <span className="text-xs uppercase tracking-[0.2em] text-stone-500 dark:text-zinc-500">
                 Live conversation
               </span>
               <button
                 type="button"
                 onClick={resetChat}
-                className="flex items-center gap-2 cursor-pointer text-xs uppercase tracking-[0.16em] text-zinc-500 transition-colors hover:text-white"
+                className="flex cursor-pointer items-center gap-2 text-xs uppercase tracking-[0.16em] text-stone-500 transition-colors hover:text-stone-900 dark:text-zinc-500 dark:hover:text-white"
                 aria-label="Mulai percakapan baru"
               >
                 <FiRefreshCw aria-hidden="true" />
@@ -148,8 +148,8 @@ export default function Chatbot() {
                   <div
                     className={`max-w-[88%] whitespace-pre-wrap text-sm leading-6 sm:max-w-[75%] ${
                       message.role === "user"
-                        ? "border border-white/20 bg-white px-4 py-3 text-black"
-                        : "border-l border-white/30 pl-4 text-zinc-300"
+                        ? "border border-stone-300 bg-white px-4 py-3 text-stone-900"
+                        : "border-l border-stone-400 pl-4 text-stone-700 dark:border-white/30 dark:text-zinc-300"
                     }`}
                   >
                     {message.role === "assistant" ? (
@@ -159,7 +159,7 @@ export default function Chatbot() {
                             <p className="mb-3 last:mb-0">{children}</p>
                           ),
                           strong: ({ children }) => (
-                            <strong className="font-semibold text-white">
+                            <strong className="font-semibold text-stone-900 dark:text-white">
                               {children}
                             </strong>
                           ),
@@ -168,7 +168,7 @@ export default function Chatbot() {
                               href={href}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="underline underline-offset-4 hover:text-white"
+                              className="underline underline-offset-4 hover:text-stone-900 dark:hover:text-white"
                             >
                               {children}
                             </a>
@@ -184,7 +184,7 @@ export default function Chatbot() {
                 </div>
               ))}
               {isLoading && (
-                <p className="border-l border-white/30 pl-4 text-sm text-zinc-500">
+                <p className="border-l border-stone-400 pl-4 text-sm text-stone-500 dark:border-white/30 dark:text-zinc-500">
                   Sedang menyusun jawaban...
                 </p>
               )}
@@ -193,18 +193,18 @@ export default function Chatbot() {
 
             <form
               onSubmit={handleSubmit}
-              className="border-t border-white/10 p-4 sm:p-6"
+              className="border-t border-stone-300 p-4 dark:border-white/10 sm:p-6"
             >
               <label htmlFor="chat-question" className="sr-only">
                 Tulis pertanyaan
               </label>
-              <div className="flex items-center gap-3 border-b border-white/30 pb-2 focus-within:border-white">
+              <div className="flex items-center gap-3 border-b border-stone-400 pb-2 focus-within:border-stone-900 dark:border-white/30 dark:focus-within:border-white">
                 <input
                   id="chat-question"
                   value={question}
                   onChange={(event) => setQuestion(event.target.value)}
                   placeholder="Tulis pertanyaanmu..."
-                  className="min-w-0 flex-1 bg-transparent py-2 text-sm text-white outline-none placeholder:text-zinc-600"
+                  className="min-w-0 flex-1 bg-transparent py-2 text-sm text-stone-900 outline-none placeholder:text-stone-500 dark:text-white dark:placeholder:text-zinc-600"
                   disabled={isLoading}
                 />
                 <button

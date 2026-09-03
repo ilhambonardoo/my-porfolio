@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { skills } from "../lib/constant/profile";
-import { FaAngleDown } from "react-icons/fa";
+import { FaAngleUp } from "react-icons/fa";
 
 const Capabilities = () => {
   const [openExperience, setIsShowExperience] = useState(true);
@@ -11,7 +11,7 @@ const Capabilities = () => {
   };
 
   return (
-    <section className="mx-auto bg-neutral-950 text-white py-14 w-full lg:px-56">
+    <section className="mx-auto w-full bg-stone-100 py-14 text-stone-900 dark:bg-neutral-950 dark:text-white lg:px-56">
       <div className="rounded-2xl p-6 md:p-8 lg:w-full">
         <div className="flex gap-2">
           <h3 className="text-5xl font-semibold tracking-tight">
@@ -22,7 +22,7 @@ const Capabilities = () => {
             onClick={showExperience}
             aria-expanded={openExperience}
           >
-            <FaAngleDown
+            <FaAngleUp
               className={`transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${
                 openExperience ? "rotate-180" : "rotate-0"
               }`}
@@ -41,7 +41,7 @@ const Capabilities = () => {
             {skills.map((skill, index) => (
               <article
                 key={`${skill.title}-${index}`}
-                className="rounded-xl border border-white/10 bg-white/5 p-5 hover:bg-white/10 hover:border-white/25 transition-colors duration-300"
+                className="rounded-xl border border-stone-300 bg-white p-5 transition-colors duration-300 hover:border-stone-400 hover:bg-stone-50 dark:border-white/10 dark:bg-white/5 dark:hover:border-white/25 dark:hover:bg-white/10"
                 style={{
                   opacity: openExperience ? 1 : 0,
                   transform: openExperience
@@ -55,10 +55,10 @@ const Capabilities = () => {
                     : `${(skills.length - 1 - index) * 45}ms`,
                 }}
               >
-                <h4 className="text-base font-semibold text-white">
+                <h4 className="text-base font-semibold text-stone-900 dark:text-white">
                   {skill.title}
                 </h4>
-                <p className="mt-2 text-zinc-400 leading-relaxed text-sm text-justify">
+                <p className="mt-2 text-sm leading-relaxed text-stone-600 text-justify dark:text-zinc-400">
                   {skill.description}
                 </p>
               </article>

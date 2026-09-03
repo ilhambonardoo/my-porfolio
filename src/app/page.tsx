@@ -8,6 +8,7 @@ import Capabilities from "../components/Capabilities";
 import Certification from "../components/Certification";
 import Contact from "../components/Contact";
 import Chatbot from "../components/Chatbot";
+import { ModeToggle } from "../components/mode-toggle";
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -36,12 +37,13 @@ export default function Home() {
       <Capabilities />
       <Education />
       {isMobile ? <ProjectShowCaseMobile /> : <ProjectShowcase />}
-      <div className="min-h-screen text-white bg-neutral-950 flex items-center justify-center">
+      <div className="flex min-h-screen items-center justify-center bg-stone-50 text-stone-900 dark:bg-neutral-950 dark:text-white">
         <div>
           <Certification />
         </div>
       </div>
       <Contact />
+      <ModeToggle />
     </main>
   );
 }

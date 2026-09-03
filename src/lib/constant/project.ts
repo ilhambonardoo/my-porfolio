@@ -12,7 +12,7 @@ export const projects = [
       "3D Design Blender",
     ],
     image: "/project/iotani.png",
-    bg: "bg-zinc-950",
+    bg: "bg-stone-100 dark:bg-zinc-950",
     Link: "https://io-tani-project.vercel.app",
   },
   {
@@ -22,7 +22,7 @@ export const projects = [
       "A corporate profile website built with Next.js and TypeScript utilizing modern Node Package Manager (NPM) ecosystems, featuring seamless integration of Framer Motion, i18next, Lucide React, Swiper, and React Icons.",
     tech: ["TypeScript", "Next.js", "SEO Metadata"],
     image: "/project/boenha.png",
-    bg: "bg-zinc-950",
+    bg: "bg-stone-100 dark:bg-zinc-950",
     Link: "https://boenha-next.vercel.app/",
   },
   {
@@ -33,7 +33,7 @@ export const projects = [
     tech: ["Node.js", "Tailwind CSS", "Next.js", "Cloudinary"],
     image: "/project/onefish.png",
     Link: "https://onefish.vercel.app/",
-    bg: "bg-zinc-950",
+    bg: "bg-stone-100 dark:bg-zinc-950",
   },
   {
     id: 4,
@@ -43,7 +43,7 @@ export const projects = [
     tech: ["ESP32", "Next.js", "Jupyter Notebook", "FastAPI", "Load Cell"],
     image: "/project/squeeze.png",
     Link: "https://squeeze-cage.vercel.app",
-    bg: "bg-zinc-950",
+    bg: "bg-stone-100 dark:bg-zinc-950",
   },
 ];
 

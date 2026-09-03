@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Certification = () => {
   return (
-    <section className="relative overflow-hidden bg-neutral-950 text-white">
+    <section className="relative overflow-hidden bg-stone-50 text-stone-900 dark:bg-neutral-950 dark:text-white">
       <div className="relative mx-auto w-full max-w-7xl md:px-10 px-5">
         {/* Header Section */}
         <div className="mb-12 md:mb-16">
@@ -35,10 +35,10 @@ const Certification = () => {
               </div>
 
               <div className="w-full md:w-3/5 text-center md:text-left">
-                <h3 className="font-plenty text-2xl md:text-3xl text-white mb-6 leading-tight font-semibold">
+                <h3 className="font-plenty mb-6 text-2xl font-semibold leading-tight text-stone-900 dark:text-white md:text-3xl">
                   {item.title}
                 </h3>
-                <p className="text-white leading-relaxed text-sm md:text-base text-justify md:text-left">
+                <p className="text-sm leading-relaxed text-stone-700 text-justify dark:text-white md:text-left md:text-base">
                   {item.description}
                 </p>
               </div>

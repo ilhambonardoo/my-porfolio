@@ -60,10 +60,10 @@ export default function ProjectShowCaseMobile() {
         {projects.map((project) => (
           <article
             key={project.id}
-            className={`project-panel relative w-screen h-screen shrink-0 flex items-center justify-center p-6 bg-linear-to-br ${project.bg}`}
+            className={`project-panel relative flex h-screen w-screen shrink-0 items-start justify-center overflow-y-auto p-6 pt-24 bg-linear-to-br ${project.bg}`}
           >
-            <div className="w-full max-w-md flex flex-col gap-4">
-              <div className="project-image relative aspect-video rounded-xl overflow-hidden ring-1 ring-white/10 group">
+            <div className="flex w-full max-w-md flex-col gap-8">
+              <div className="relative h-52 rounded-xl overflow-hidden ring-1 ring-white/10 group">
                 <Link
                   href={project.Link || "#"}
                   target="_blank"
@@ -80,7 +80,7 @@ export default function ProjectShowCaseMobile() {
               </div>
 
               <div className="project-info">
-                <h3 className="project-title mb-2 text-3xl font-bold tracking-tight text-stone-900 dark:text-white">
+                <h3 className="mb-2 text-3xl font-bold tracking-tight text-stone-900 dark:text-white">
                   {project.title}
                 </h3>
                 <p className="text-sm leading-relaxed text-stone-700 dark:text-zinc-300">

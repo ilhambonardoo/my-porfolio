@@ -37,22 +37,6 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Smart Parking Light",
-    description:
-      "An automated digital parking system engineered to track and count vehicle entries. The infrastructure provides real-time occupancy updates, utilizing green LED indicators for vacant slots and red for occupied spaces.",
-    tech: [
-      "Seven Segment",
-      "Jumper Wires",
-      "LDR (Light Dependent Resistor)",
-      "IC 7404",
-      "LED",
-    ],
-    image: "/project/smart.jpeg",
-    Link: "/video/smart.mp4",
-    bg: "bg-zinc-950",
-  },
-  {
-    id: 5,
     title: "Squeeze Cage",
     description:
       "An automated weighing and squeezing cage system for goats and sheep integrated with a Web Dashboard and Machine Learning. The platform manages livestock data through a Next.js full-stack framework with Prisma ORM and PostgreSQL (hosted on Supabase), while the predictive ML models are deployed seamlessly using FastAPI.",

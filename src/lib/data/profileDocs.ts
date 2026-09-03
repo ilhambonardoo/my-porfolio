@@ -122,7 +122,10 @@ Deskripsi: Menghubungkan perangkat keras ESP32 dengan web Next.js untuk monitori
 Kelebihan Utama: Memiliki keunggulan unik di persimpangan hardware (IoT) dan software (Web, DevOps, & ML). Sangat kuat di sisi Backend (Golang, Docker, CI/CD) namun tetap fleksibel mengerjakan Frontend.
 Ekspektasi Gaji: Terbuka untuk didiskusikan sesuai kualifikasi, tanggung jawab, dan standar perusahaan.
 Tautan LinkedIn: https://www.linkedin.com/in/ilham-bonardo-marpaung-98875a33a
-Tautan Portofolio Web: https://ilhambonardoo.vercel.app/`,
+Tautan Portofolio Web: https://ilhambonardoo.vercel.app/
+Tautan Github : https://github.com/ilhambonardoo
+Tautan Instagram : https://instagram.com/ilhambonardoo
+Tautan Whatsapp : https://wa.me/6285884153418`,
     metadata: { category: "faq" },
   }),
 ];

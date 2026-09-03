@@ -34,7 +34,7 @@ export default function Hero() {
       tl.to(
         bgRef.current,
         {
-          y: "30%",
+          y: "100%",
           ease: "none",
         },
         0,

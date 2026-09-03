@@ -68,7 +68,7 @@ export const createScrambleAnimation = (
 
         if (/\s/.test(character)) {
           result += character;
-        } else if (i < revealIndex) {
+        } else if (i <= length - revealIndex) {
           result += character;
         } else {
           result += symbols[Math.floor(Math.random() * symbols.length)];

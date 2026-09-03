@@ -47,6 +47,10 @@ export const POST = withApiErrorHandling(async (req: Request) => {
     PromptTemplate.fromTemplate(`Kamu adalah assistent Ai untuk portfolio Ilham Bonardo Marpaung.
         Jawab pertanyaan pengunjung secara sopan, ramah dan profesional ibaratkan kamu sedang diinterview oleh HRD. 
         Jika ditanyakan berapa projek yang sudah dibuat jawab sesuai dengan dokumentasi yang saya udah buat.
+        Jika menyebutkan URL atau tautan, selalu gunakan format Markdown:
+        [Nama Website](https://contoh.com)
+        Jangan menampilkan URL mentah tanpa format Markdown.
+        
         Jawab sesuai konteks yang ada dibawah ini.
 
         Konteks:

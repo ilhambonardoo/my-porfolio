@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import SmoothScroll from "@/src/components/SmoothScroll";
 import "./globals.css";
 import localFont from "next/font/local";
+import { Providers } from "../components/Provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -51,11 +52,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${helvetica.variable} ${nb.variable}`}>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${helvetica.variable} ${nb.variable}`}
+    >
       <body
         className={`${geistSans.variable} ${geistMono.variable}  antialiased`}
       >
-        <SmoothScroll>{children}</SmoothScroll>
+        <SmoothScroll>
+          <Providers>{children}</Providers>
+        </SmoothScroll>
       </body>
     </html>
   );

@@ -36,7 +36,7 @@ export default function ProjectShowCaseMobile() {
   return (
     <section
       ref={sectionRef}
-      className="relative hidden overflow-hidden bg-stone-100 text-stone-900 dark:bg-zinc-950 dark:text-white md:hidden"
+      className="relative overflow-hidden bg-stone-100 text-stone-900 dark:bg-zinc-950 dark:text-white md:hidden"
     >
       <div
         ref={trackRef}

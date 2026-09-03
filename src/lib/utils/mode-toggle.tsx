@@ -3,7 +3,7 @@
 
 import { useTheme } from "next-themes";
 import { FiMoon, FiSun } from "react-icons/fi";
-import useMounted from "../hooks/useMounted";
+import useMounted from "../../hooks/useMounted";
 
 export function ModeToggle() {
   const { setTheme, resolvedTheme } = useTheme();

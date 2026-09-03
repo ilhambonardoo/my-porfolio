@@ -8,7 +8,7 @@ import Capabilities from "../components/Capabilities";
 import Certification from "../components/Certification";
 import Contact from "../components/Contact";
 import Chatbot from "../components/Chatbot";
-import { ModeToggle } from "../components/mode-toggle";
+import { ModeToggle } from "../lib/utils/mode-toggle";
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);

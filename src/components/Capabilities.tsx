@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { skills } from "../lib/constant/profile";
+import { skills } from "../lib/data/profile";
 import { FaAngleUp } from "react-icons/fa";
 
 const Capabilities = () => {

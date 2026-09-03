@@ -24,7 +24,7 @@ export default function Hero() {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: containerRef.current,
-          start: "top top",
+          start: "top 75%",
           end: "bottom top",
           scrub: true,
           pin: false,
@@ -41,7 +41,12 @@ export default function Hero() {
       );
 
       if (textRef.current) {
-        createScrambleAnimation(textRef.current, originalText, SYMBOLS);
+        createScrambleAnimation(
+          textRef.current,
+          originalText,
+          SYMBOLS,
+          containerRef.current,
+        );
       }
     },
 

@@ -35,40 +35,41 @@ export const createScrambleAnimation = (
   element: HTMLElement,
   text?: string,
   symbols: string = SYMBOLS_SMALL,
+  triggerElement?: HTMLElement | null,
 ) => {
   const targetText = text && text.length > 0 ? text : element.innerText;
-  const initialHeight = element.offsetHeight;
-  if (initialHeight > 0) {
-    element.style.minHeight = `${initialHeight}px`;
-  }
+
+  element.innerText = targetText;
 
   const counter = { value: 0 };
+
   gsap.to(counter, {
     value: 1.1,
     duration: 0.9,
-    ease: "power1.out",
+    ease: "none",
     scrollTrigger: {
-      trigger: element,
-      start: "top 75%",
-      toggleActions: "play none none none",
+      trigger: triggerElement ?? element,
+      start: "top top",
+      end: "bottom top",
       scrub: true,
     },
     onUpdate: () => {
-      const progress = counter.value;
+      if (counter.value === 0) {
+        element.innerText = targetText;
+        return;
+      }
+
       const length = targetText.length;
-      const revealIndex = Math.floor(progress * length);
+      const revealIndex = Math.floor(counter.value * length);
       let result = "";
 
       for (let i = 0; i < length; i++) {
-        const char = targetText[i];
+        const character = targetText[i];
 
-        if (/\s/.test(char)) {
-          result += char;
-          continue;
-        }
-
-        if (i < revealIndex) {
-          result += char;
+        if (/\s/.test(character)) {
+          result += character;
+        } else if (i < revealIndex) {
+          result += character;
         } else {
           result += symbols[Math.floor(Math.random() * symbols.length)];
         }
@@ -78,9 +79,6 @@ export const createScrambleAnimation = (
     },
     onComplete: () => {
       element.innerText = targetText;
-      if (initialHeight > 0) {
-        element.style.minHeight = "";
-      }
     },
   });
 };

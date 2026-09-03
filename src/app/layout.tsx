@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import SmoothScroll from "@/src/components/SmoothScroll";
+import SmoothScroll from "@/src/lib/utils/SmoothScroll";
 import "./globals.css";
 import localFont from "next/font/local";
-import { Providers } from "../components/Provider";
+import { Providers } from "../lib/utils/Provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

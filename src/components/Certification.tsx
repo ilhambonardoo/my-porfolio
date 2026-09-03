@@ -1,4 +1,4 @@
-import { certifications } from "../lib/constant/profile";
+import { certifications } from "../lib/data/profile";
 import Image from "next/image";
 
 const Certification = () => {

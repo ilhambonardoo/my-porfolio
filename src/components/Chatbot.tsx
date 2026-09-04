@@ -2,7 +2,7 @@
 
 import { FormEvent, useEffect, useRef, useState } from "react";
 import ReactMarkdown from "react-markdown";
-import { FiArrowUp, FiRefreshCw } from "react-icons/fi";
+import { FiArrowUp, FiLoader, FiRefreshCw } from "react-icons/fi";
 
 type Message = {
   role: "user" | "assistant";
@@ -12,7 +12,7 @@ type Message = {
 const initialMessage: Message = {
   role: "assistant",
   content:
-    "Halo, saya asisten virtual Ilham. Tanyakan pengalaman, project, atau kemampuan yang ingin kamu ketahui.",
+    "Hello, I am Ilham's virtual assistant. Feel free to ask about the experiences, projects, or skills you would like to know more about.",
 };
 
 export default function Chatbot() {
@@ -99,8 +99,8 @@ export default function Chatbot() {
             </h2>
           </div>
           <p className="max-w-xs text-sm leading-6 text-stone-600 dark:text-zinc-400 md:text-right">
-            Kenali cara kerja, pengalaman, dan project melalui percakapan
-            singkat.
+            Get to know work, experiences and projects through conversation
+            short.
           </p>
         </div>
 
@@ -111,18 +111,18 @@ export default function Chatbot() {
                 Portfolio assistant
               </p>
               <p className="max-w-sm text-2xl leading-tight text-stone-800 dark:text-zinc-200 sm:text-3xl">
-                Satu pertanyaan untuk menemukan konteks yang tepat.
+                One question to find the right context.
               </p>
             </div>
             <div className="mt-14 border-l border-stone-400 pl-4 text-sm leading-6 text-stone-500 dark:border-white/20 dark:text-zinc-500">
-              Coba tanyakan: &quot;Apa project yang paling menantang?&quot;
+              Try asking: &quot;What was the most challenging project?&quot;
             </div>
           </div>
 
           <div className="flex h-124 min-h-0 flex-col bg-stone-200/70 dark:bg-black/20">
             <div className="flex items-center justify-between border-b border-stone-300 px-5 py-4 dark:border-white/10 sm:px-8">
               <span className="text-xs uppercase tracking-[0.2em] text-stone-500 dark:text-zinc-500">
-                Live conversation
+                Conversation
               </span>
               <button
                 type="button"
@@ -131,7 +131,7 @@ export default function Chatbot() {
                 aria-label="Mulai percakapan baru"
               >
                 <FiRefreshCw aria-hidden="true" />
-                <span className="hidden sm:inline">Reset</span>
+                <span className="hidden sm:inline">Clear</span>
               </button>
             </div>
 
@@ -184,8 +184,8 @@ export default function Chatbot() {
                 </div>
               ))}
               {isLoading && (
-                <p className="border-l border-stone-400 pl-4 text-sm text-stone-500 dark:border-white/30 dark:text-zinc-500">
-                  Sedang menyusun jawaban...
+                <p className="flex items-center gap-2 border-l border-stone-400 pl-4 text-sm text-stone-500 dark:border-white/30 dark:text-zinc-500">
+                  <FiLoader className="animate-spin" aria-hidden="true" />
                 </p>
               )}
               {error && <p className="text-sm text-red-300">{error}</p>}

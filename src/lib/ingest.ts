@@ -1,4 +1,4 @@
-import { PGVectorStore } from "@langchain/community/vectorstores/pgvector";
+import { PGVectorStore } from "@langchain/pgvector";
 import { GoogleGenerativeAIEmbeddings } from "@langchain/google-genai";
 import { profileDocs } from "./data/profileDocs";
 

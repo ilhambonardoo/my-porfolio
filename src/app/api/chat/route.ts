@@ -1,5 +1,5 @@
 import { withApiErrorHandling } from "@/src/lib/api-error";
-import { PGVectorStore } from "@langchain/community/vectorstores/pgvector";
+import { PGVectorStore } from "@langchain/pgvector";
 import { PromptTemplate } from "@langchain/core/prompts";
 import {
   ChatGoogleGenerativeAI,

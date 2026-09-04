@@ -71,7 +71,7 @@ Deskripsi: Website portofolio pribadi Ilham yang terintegrasi dengan chatbot AI 
 Cara Kerja Sistem AI:
 - Proses Ingestion (Penyimpanan): Data profil diubah menjadi vektor 768 dimensi menggunakan Gemini Embedding (embedding-001) dan disimpan di database Supabase (pgvector).
 - Proses Querying (Pencarian & Chat): Saat pengunjung bertanya, sistem mengubah pertanyaan menjadi vektor, mencari data terdekat di Supabase (similarity search), lalu menyuapkan data tersebut ke DeepSeek LLM via LangChain untuk menghasilkan jawaban alami.
-Tech Stack: Next.js (App Router), React, TypeScript, Tailwind CSS, Supabase (pgvector), LangChain, Gemini Embedding, DeepSeek API.
+Tech Stack: Next.js (App Router), React, TypeScript, Tailwind CSS, Supabase (pgvector), LangChain, Gemini Embedding, Gemini API.
 Tautan Website : https://ilhambonardoo.vercel.app
 `,
 

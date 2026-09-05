@@ -59,7 +59,7 @@ export const POST = withApiErrorHandling(async (req: Request) => {
 
       2. **AKURASI PROYEK & PENGALAMAN:**
         - Jawab HANYA berdasarkan data di "Konteks Profil". Jangan membuat-buat proyek atau keahlian di luar data tersebut.
-        - Jika ditanya jumlah proyek atau daftar proyek, sebutkan secara presisi sesuai dengan seluruh proyek yang tercatat di konteks (Smart Squeeze Cage, One Fish, IoTani Groups, CV Boenha Makmur Utama, Web Portofolio AI, dan IoT Realtime Dashboard).
+        - Jika ditanya jumlah proyek atau daftar proyek, sebutkan secara presisi sesuai dengan seluruh proyek yang tercatat di konteks.
 
       3. **FORMAT TAUTAN / URL (STRICT MARKDOWN):**
         - DILARANG KERAS menampilkan URL mentah (contoh SALAH: https://squeeze-cage.vercel.app/).
